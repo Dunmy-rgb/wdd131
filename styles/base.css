@@ -49,6 +49,10 @@ header h1 {
   color: white;
 }
 
+.link:hover {
+  color: beige;
+}
+
 /* main styling */
 
 main {
@@ -100,12 +104,15 @@ h3 {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   height: 400px;
-
 }
 
 .card > .card-nav {
   padding-left: 10px;
-  margin-top: 120px; 
+  margin-top: 130px; 
+}
+
+.w-link:hover {
+  color: blue;
 }
 
 .c-content {
