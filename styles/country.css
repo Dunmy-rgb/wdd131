@@ -5,6 +5,11 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--primary: #ad0404;
+	--secondary: #de1724;
+}
+
 /* Body Styles */
 body {
 	font-family: Arial, sans-serif;
@@ -41,6 +46,13 @@ header h1 {
 	position: relative;
 }
 
+.w-h1 > h2::after {
+  content: "☁️";
+}
+
+.weather-icon {
+	display: none;	
+}
 /* Background Image */
 .image-section img {
 	width: 100%;
@@ -99,6 +111,8 @@ header h1 {
   justify-content: center;
   margin-bottom: 6px;
 }
+
+
 
 .w-h1 img {
   width: 50px;
