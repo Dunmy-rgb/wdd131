@@ -30,7 +30,7 @@ body {
 
 /* Header */
 header {
-	background-color: #ad0404;
+	background-color: var(--primary);
 	padding: 15px;
 	font-size: 24px;
 	font-weight: bold;
@@ -120,7 +120,7 @@ header h1 {
 
 /* Footer */
 footer {
-	background-color: #de1724;
+	background-color: var(--secondary);
 	color: white;
 	padding: 1.5rem;
 	border-radius: 5px;
