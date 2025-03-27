@@ -7,11 +7,12 @@
         top: 60px;
         left: 0;
         width: 100%;
-        z-index: 10;
+        flex-direction: column;
+        z-index: 3;
     }
 
     nav.show {
-        display: block;
+        display: flex;
     }
 
     nav ul {

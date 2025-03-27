@@ -19,12 +19,11 @@ h1 {
 }
 
 nav {
-  position: relative;
-  top: 60px;
-  left: 0;
-  width: 100%;
+  display: flex;  /* Make sure nav is always visible in desktop mode */
+  justify-content: center;
+  position: static;  /* Remove absolute positioning */
   background: #3d6bbf;
-  display: none; /* Hidden by default */
+  width: auto;
 }
 
 nav.show {
@@ -32,6 +31,8 @@ nav.show {
 }
 
 nav ul {
+  display: flex;
+  gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -58,6 +59,9 @@ nav a:hover {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+  display: block;
+  z-index: 10;
+  display: none;
 }
 
 /* Temple Gallery */
@@ -89,10 +93,11 @@ nav a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.4); /* Darker background */
   padding: 15px;
   width: 90%;
   border-radius: 5px;
+  z-index: 2;
 }
 
 .temple-info h3, 

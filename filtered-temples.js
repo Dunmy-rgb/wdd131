@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Responsive Hamburger Menu
   const menuToggle = document.querySelector("#menu-toggle");
-  const menu = document.querySelector("#menu");
+  const nav = document.querySelector("nav");
 
   menuToggle.addEventListener("click", function () {
-    menu.classList.toggle("show");
+    nav.classList.toggle("show");
     menuToggle.textContent = menu.classList.contains("show") ? "✖" : "☰";
   });
 
@@ -149,6 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       templeCard.appendChild(templeImage);
       templeCard.appendChild(templeInfo);
+          
+      
       gallery.appendChild(templeCard);
     });
   }
