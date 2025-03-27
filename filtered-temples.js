@@ -149,8 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       templeCard.appendChild(templeImage);
       templeCard.appendChild(templeInfo);
-          
-      
       gallery.appendChild(templeCard);
     });
   }
