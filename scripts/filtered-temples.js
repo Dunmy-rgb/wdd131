@@ -136,6 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const templeImage = document.createElement("img");
       templeImage.src = temple.imageUrl;
       templeImage.alt = `Image of ${temple.templeName}`;
+      templeImage.width = "400";
+      templeImage.height = "250";
 
       // Overlay text
       const templeInfo = document.createElement("div");
