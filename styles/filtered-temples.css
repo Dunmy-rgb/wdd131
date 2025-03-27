@@ -22,6 +22,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 nav {
   display: flex;  /* Make sure nav is always visible in desktop mode */
   justify-content: center;
