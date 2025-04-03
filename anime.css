@@ -139,7 +139,7 @@ main {
   text-align: center;
 }
 
-#reference > li {
+.section-content > ul > li {
   list-style: none;
 }
 
