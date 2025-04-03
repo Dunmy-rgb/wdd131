@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Hub</title>
+    <meta name="description" content="Discover the latest anime reviews, character spotlights, upcoming releases, and community discussions. Dive into the world of anime with engaging articles, recommendations, and interactive features." />
+    <meta name="author" content="Omodunmolami Ojulari">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="anime.css">
+    <title>Anime Hub</title>
 </head>
 <body>
     <div id="loadingScreen">
@@ -14,16 +19,16 @@
     <header>
         <h1>Otaku Den</h1>
         <nav>
-            <a href="anime.html">Home</a>
-            <a href="spotlight.html">Spotlights</a>
-            <a href="community.html">Community</a>
+            <a href="anime.html" aria-label="Home">Home</a>
+            <a href="spotlight.html" aria-label="Spotlights">Spotlights</a>
+            <a href="community.html" aria-label="Community">Community</a>
         </nav>
     </header>
 
     <main>
         <section id="tabs">
-            <button class="tab-button active" data-tab="reviews">Latest Reviews</button>
-            <button class="tab-button" data-tab="releases">Upcoming Releases</button>
+            <button class="tab-button active" data-tab="reviews" aria-controls="reviews">Latest Reviews</button>
+            <button class="tab-button" data-tab="releases" aria-controls="releases">Upcoming Releases</button>
         </section>
 
         <!-- Latest Reviews Section -->
@@ -45,16 +50,16 @@
         </section>
 
         <!-- Upcoming Releases Section -->
-        <section id="releases" class="tab-content">
+        <section id="releases" class="tab-content" aria-labelledby="releases-tab">
             <h2>Upcoming Releases</h2>
             <div id="carousel" class="carousel"></div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Anime Hub - <a href="references.html">References</a></p>
+        <p>&copy; 2025 Anime Hub - <a href="references.html" aria-label="View references">References</a></p>
     </footer>
 
-    <script src="anime.js"></script>
+    <script src="anime.js" defer></script>
 </body>
 </html>

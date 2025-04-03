@@ -140,7 +140,7 @@ main {
 }
 
 .section-content > ul > li {
-  list-style: none;
+  list-style: no;
 }
 
 .section-buttons {
