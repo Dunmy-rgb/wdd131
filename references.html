@@ -6,7 +6,7 @@
     <meta name="description" content="Find all the references and sources for the images, descriptions, and reviews used on Anime Hub." />
     <meta name="author" content="Omodunmolami Ojulari">
     <title>Anime Hub - References</title>
-    <link rel="stylesheet" href="anime.css">
+    <link rel="stylesheet" href="styles/anime.css">
 </head>
 <body>
     <header>
@@ -22,9 +22,9 @@
         <section id="references">
             <h2>References</h2>
             <div class="section-buttons">
-                <button class="section-button active" data-section="images" aria-controls="images">Image Sources</button>
-                <button class="section-button" data-section="descriptions" aria-controls="descriptions">Anime Descriptions</button>
-                <button class="section-button" data-section="reviews" aria-controls="reviews">Review Sources</button>
+                <button class="section-button active" data-section="images" aria-controls="images" aria-selected="true">Image Sources</button>
+                <button class="section-button" data-section="descriptions" aria-controls="descriptions" aria-selected="false">Anime Descriptions</button>
+                <button class="section-button" data-section="reviews" aria-controls="reviews" aria-selected="false">Review Sources</button>
             </div>
             
             <div id="images" class="section-content active" aria-labelledby="images-tab">
@@ -41,6 +41,6 @@
         <p>&copy; 2025 Anime Hub - <a href="anime.html" aria-label="Back to Home">Back to Home</a></p>
     </footer>
 
-    <script src="anime.js" defer></script>
+    <script src="scripts/anime.js" defer></script>
 </body>
 </html>

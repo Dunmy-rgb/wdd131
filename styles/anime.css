@@ -140,7 +140,7 @@ main {
 }
 
 .section-content > ul > li {
-  list-style: no;
+  list-style: none;
 }
 
 .section-buttons {
@@ -191,13 +191,14 @@ main {
 }
 
 /* Carousel */
+/* Carousel */
 #carousel {
   margin-top: 1.5rem;
   display: flex;
   overflow-x: hidden;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Set the height of the carousel */
+  height: 350px;
 }
 
 .carousel-item {
@@ -208,47 +209,22 @@ main {
   border-radius: 8px;
   text-align: center;
   margin: 0 auto;
-  min-width: 350px; /* Ensure proper item width */
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-width: 350px;
 }
 
 .carousel-img {
-  width: 500px; /* Set image size */
-  height: auto;
-  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
   margin-bottom: 1rem;
   border-radius: 8px;
 }
-
 .carousel p {
   margin-top: 10px;
   font-size: 1.1rem;
   color: #333;
-}
-
-/* Spotlight Image Styling */
-#spotlight img {
-  width: 100%;
-  max-width: 300px; /* Max width for spotlight images */
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover; /* Ensures proper image cropping if needed */
-}
-
-/* General Image Styling for all images */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
 }
 
 /* Tab System Styling */
@@ -311,42 +287,14 @@ footer a:hover {
   }
 
   nav a {
-    display: block;
-    margin: 0.5rem 0;
+    margin-right: 1rem;
   }
 
-  #references h2 {
-    font-size: 2rem;
-  }
-
-  #references ul li {
-    font-size: 1.1rem;
-  }
-  
-  .section-buttons {
-    flex-direction: column;
-  }
-
-  .section-button {
-    width: 90%;
+  footer {
+    text-align: left;
   }
 
   #carousel {
-    display: block;
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  .section-button {
-    padding: 8px 15px;
+    height: auto;
   }
 }

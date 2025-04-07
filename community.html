@@ -6,7 +6,7 @@
     <meta name="description" content="Join discussions on anime topics and engage with the community through the Anime Hub's discussion board." />
     <meta name="author" content="Omodunmolami Ojulari">
     <title>Community Discussions</title>
-    <link rel="stylesheet" href="anime.css">
+    <link rel="stylesheet" href="styles/anime.css">
 </head>
 <body>
     <header>
@@ -21,11 +21,12 @@
     <main>
         <section id="discussion-board" aria-labelledby="discussion-board-heading">
             <h2 id="discussion-board-heading">Discussion Board</h2>
-            <div id="discussions"></div>
+            <div id="discussions"></div> <!-- Discussions section where threads will be added -->
+            
             <form id="newThreadForm" aria-labelledby="newThreadForm-label">
                 <label for="threadTitle" id="newThreadForm-label">Create a new thread:</label>
-                <input type="text" id="threadTitle" placeholder="Thread Title" required aria-required="true">
-                <textarea id="threadContent" placeholder="Your thoughts..." required aria-required="true"></textarea>
+                <input type="text" id="threadTitle" name="title" placeholder="Thread Title" required aria-required="true">
+                <textarea id="threadContent" name="content" placeholder="Your thoughts..." required aria-required="true"></textarea>
                 <button type="submit">Create Thread</button>
             </form>
         </section>
@@ -35,6 +36,6 @@
         <p>&copy; 2025 Anime Hub - <a href="references.html" aria-label="View references">References</a></p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="scripts/anime.js" defer></script>
 </body>
 </html>
